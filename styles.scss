@@ -1,0 +1,134 @@
+$font-family: "Red Hat Display", sans-serif;
+$principal-background: hsl(225, 100%, 98%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  margin: 80px auto 80px auto;
+}
+
+.container {
+  width: 450px;
+  background-color: white;
+  margin: 80px 0 80px 0;
+  border-radius: 20px;
+  box-shadow: 0px 17px 19px -3px rgba(0, 0, 0, 0.2);
+}
+
+.desktop {
+  position: fixed;
+  z-index: -999;
+  display: inline;
+}
+
+.generalContainer {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  width: 1440px;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+}
+
+.par {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 50px 0 50px;
+  font-size: 16px;
+}
+
+.explaination {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.planChange {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  > * {
+    margin: 10px;
+  }
+}
+
+.planCost {
+  > * {
+    margin: 5px;
+  }
+
+  p:first-of-type {
+    font-weight: 900;
+  }
+
+  p:last-of-type {
+    color: hsl(224, 23%, 55%);
+  }
+}
+
+img.hero {
+  border-radius: 20px 20px 0 0;
+}
+
+.Title {
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.change {
+  margin-left: auto;
+  color: #3829e0;
+  font-weight: 800;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-family: inherit;
+  font-weight: 900;
+  box-shadow: 0px 17px 19px -3px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.cancel {
+  color: #7280a7;
+  font-weight: 900;
+  margin: 35px;
+}
+
+.cancel:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+.changeLink {
+  color: hsl(245, 75%, 52%);
+}
+
+.changeLink:hover {
+  text-decoration: none;
+  opacity: 50%;
+}
